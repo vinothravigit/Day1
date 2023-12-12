@@ -1,0 +1,27 @@
+HTTP/1.1 and HTTP/2 are two versions of the Hypertext Transfer Protocol, which is the foundation 
+of data communication on the World Wide Web. Here are some key differences between HTTP/1.1 and HTTP/2:
+
+1. Multiplexing:
+HTTP/1.1: Uses a single connection per request, which means that multiple requests from a client may result in multiple connections.
+HTTP/2: Supports multiplexing, allowing multiple requests and responses to be multiplexed over a single connection. This improves efficiency and reduces latency.
+2. Header Compression:
+HTTP/1.1: Headers are not compressed, leading to larger overhead and slower performance.
+HTTP/2: Utilizes header compression, which significantly reduces the amount of data that needs to be transmitted and improves performance.
+3. Binary Protocol:
+HTTP/1.1: Uses a text-based protocol, which can be human-readable but is less efficient for machines to parse.
+HTTP/2: Employs a binary protocol, which is more compact and efficient for both machines and humans.
+4. Prioritization:
+HTTP/1.1: Does not support prioritization of resources. All resources are fetched in the order they are requested.
+HTTP/2: Introduces stream prioritization, allowing the client to indicate the priority of resources. This ensures that more critical resources are fetched first.
+5. Server Push:
+HTTP/1.1: Clients need to explicitly request each resource, even if they are required to render a page.
+HTTP/2: Supports server push, allowing the server to push resources to the client's cache without explicit requests, improving page load times.
+6. Connection Handling:
+HTTP/1.1: Requires multiple connections for parallelism, leading to increased latency.
+HTTP/2: Achieves parallelism over a single connection, reducing latency and improving efficiency.
+7. Backward Compatibility:
+HTTP/1.1: Widely supported and has better compatibility with older systems.
+HTTP/2: While widely adopted, not all servers and clients support HTTP/2. However, most modern browsers and servers do.
+8. TLS Usage:
+HTTP/1.1: TLS (HTTPS) is optional.
+HTTP/2: Encourages the use of TLS, and many implementations only support it over HTTPS.
