@@ -1,3 +1,5 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
 HTTP/1.1 and HTTP/2 are two versions of the Hypertext Transfer Protocol, which is the foundation 
 of data communication on the World Wide Web. Here are some key differences between HTTP/1.1 and HTTP/2:
 
@@ -25,3 +27,13 @@ HTTP/2: While widely adopted, not all servers and clients support HTTP/2. Howeve
 8. TLS Usage:
 HTTP/1.1: TLS (HTTPS) is optional.
 HTTP/2: Encourages the use of TLS, and many implementations only support it over HTTPS.
+
+Exploring Objects and Their Internal Representation in JavaScript.
+
+JavaScript, as a versatile and dynamic programming language, relies heavily on objects as a fundamental data structure. 
+Objects play a crucial role in organizing and manipulating data within the language. In this blog, we'll delve into the internal representation
+of objects in JavaScript, exploring how they are structured and how their properties are managed.
+
+JavaScript engines use various mechanisms to represent objects efficiently. One common approach is the use of a hash table (or dictionary) 
+to store the object's properties and their corresponding values. Each property's name is hashed to an index in the table, providing quick 
+access to the associated value.
